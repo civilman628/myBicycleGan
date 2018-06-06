@@ -8,9 +8,9 @@ mkdir -p ${MODEL_DIR}
 
 MODEL_FILE_G=${MODEL_DIR}/latest_net_G.pth
 URL_G=https://people.eecs.berkeley.edu/~junyanz/projects/BicycleGAN/models/${FILE}_net_G.pth
-wget -N $URL_G -O $MODEL_FILE_G
+wget --no-check-certificate -N $URL_G -O $MODEL_FILE_G
 
 
 MODEL_FILE_E=${MODEL_DIR}/latest_net_E.pth
 URL_E=https://people.eecs.berkeley.edu/~junyanz/projects/BicycleGAN/models/${FILE}_net_E.pth
-wget -N $URL_E -O $MODEL_FILE_E
+wget --no-check-certificate -N $URL_E -O $MODEL_FILE_E
